@@ -1,5 +1,6 @@
 ---
 ---
+
 # Scope Upgrade
 
 This page will demonstrate how it is possible to enable certain software upgrades on certain digital oscilloscopes by crafting your own hardware key. The hardware key consists of nothing more than an i2c eeprom device and a sim card connector. The information found here is based on http://forum.tsebi.com/viewtopic.php?f=4&t=113 (Tektronix DPO 2024 hardware feature module memory upgrade).
