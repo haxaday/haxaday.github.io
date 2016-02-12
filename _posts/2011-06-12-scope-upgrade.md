@@ -38,5 +38,6 @@ This page will demonstrate how it is possible to enable certain software upgrade
 ## Pics
 
 ![Board](/images/scope_upgrade_board.jpg)
+
 ![ScreenShot](/images/scope_upgrade_screenshot.jpg)
 
