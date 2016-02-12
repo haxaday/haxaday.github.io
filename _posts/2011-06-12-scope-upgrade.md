@@ -25,7 +25,7 @@ This page will demonstrate how it is possible to enable certain software upgrade
 
    For example, I used an avr to program the EEPROM by modifying the code from http://www.nongnu.org/avr-libc/examples/twitest/twitest.c:
 
-   ```c
+   ```C
    rv = ee24xx_write_bytes(0x004, 9, (uint8_t *)"DPO2COMP");
    rv = ee24xx_write_bytes(0x204, 9, (uint8_t *)"DPO2EMBD");
    ```
