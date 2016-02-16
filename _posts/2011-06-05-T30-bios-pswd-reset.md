@@ -120,7 +120,7 @@ STARTBIT 0xAE 0x38 STOPBIT STARTBIT 0xAF *toggle clock* STOPBIT
    Pull-up resistors ON
    ```
 
-   > If anything else shows up, ex, Short detected, etc, check your wiring to ensure proper contacts are made, and that you hooked the buspirate up to the correct pins.
+   If anything else shows up, ex, Short detected, etc, check your wiring to ensure proper contacts are made, and that you hooked the buspirate up to the correct pins.
 
 6. Now, we write the following:
 
