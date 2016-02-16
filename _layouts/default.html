@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Set this to the main language of your site -->
+<head>
+    <meta charset="utf-8">
+    
+    <title>HaxADay</title>
+    
+    <!-- Enter a brief description of your page -->
+    <meta name="description" content="">
+    
+    <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Add normalize.css which enables browsers to render all elements more consistently and in line with modern standards as it only targets particular styles that need normalizing -->
+    <link href="css/normalize.css" rel="stylesheet" media="all">
+    <!-- For legacy support (IE 6/7, Firefox < 4, and Safari < 5) use normalize-legacy.css instead -->
+    <!--<link href="css/normalize-legacy.css" rel="stylesheet" media="all">-->
+    
+    <!-- Include the site stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" media="all">
+    
+    <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
+    <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
+
+	<link href="css/github-markdown.css" rel="stylesheet" media="all" >
+	<style>
+		.markdown-body {
+			box-sizing: border-box;
+			min-width: 200px;
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 45px;
+		}
+	</style>
+</head>
+<body>
+
+    <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
+    <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page --> 
+    <header role="banner">
+    
+        <h1>Haxaday</h1>
+        
+        <!-- ARIA: the landmark role "navigation" is added here as the element contains site navigation
+        NOTE: The <nav> element does not have to be contained within a <header> element, even though the two examples on this page are. -->
+        <nav role="navigation">
+            <!-- This can contain your site navigation either in an unordered list or even a paragraph that contains links that allow users to navigate your site -->           
+        </nav>
+        
+    </header>
+    
+    <!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
+    <div class="wrap">
+    
+        <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
+        <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
+        <main> element until user agents implement the required role mapping. -->
+        <main role="main" class="markdown-body">
+    
+		{{ content }}
+            
+        </main>
+        
+    </div>
+    
+    <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
+    <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
+    <footer role="contentinfo">
+    
+        <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2016' is a date -->
+        <small>Copyright &copy; <time datetime="2016">2016</time></small>
+        
+    </footer>
+    
+</body>
+</html>
