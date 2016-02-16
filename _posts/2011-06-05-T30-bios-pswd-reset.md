@@ -110,31 +110,30 @@ STARTBIT 0xAE 0x38 STOPBIT STARTBIT 0xAF *toggle clock* STOPBIT
 3. You should now see READY on the terminal. See above picture for details.
 4. We want to bring up the power supply first, so we type in a capital W, the buspirate should respond with
 
-```
-Power Supplies ON.
-```
+   ```
+   Power Supplies ON.
+   ```
 
-Now we bring the pull-up resistors on with a capital P, the buspirate should respond with
+5. Now we bring the pull-up resistors on with a capital P, the buspirate should respond with
 
-```
-Pull-up resistors ON
-```
+   ```
+   Pull-up resistors ON
+   ```
 
-If anything else shows up, ex, Short detected, etc, check your wiring to ensure proper contacts are made, and that you hooked the buspirate up to the correct pins.
+   > If anything else shows up, ex, Short detected, etc, check your wiring to ensure proper contacts are made, and that you hooked the buspirate up to the correct pins.
 
-Now, we write the following:
+6. Now, we write the following:
 
-```
-[0xAE 0x38][0xAF r:16]
-```
+   ```
+  [0xAE 0x38][0xAF r:16]
+   ```
 
-What does this do?
+   What does this do?
+   The [ ] denote start and stop bits, and the r:16 tells the buspirate to toggle the clock 16 times. 
 
-The [ ] denote start and stop bits, and the r:16 tells the buspirate to toggle the clock 16 times. 
+   The output should look something like the following (click to enlarge)
 
-The output should look something like the following (click to enlarge)
-
-[![Terminal Output](/images/t30_bios_terminal_after.jpg)](/images/t30_bios_terminal_after.jpg)
+   [![Terminal Output](/images/t30_bios_terminal_after.jpg)](/images/t30_bios_terminal_after.jpg)
 
 # Decyphering the Data - Keyboard Scancodes
 
