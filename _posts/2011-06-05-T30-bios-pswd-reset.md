@@ -103,7 +103,9 @@ STARTBIT 0xAE 0x38 STOPBIT STARTBIT 0xAF *toggle clock* STOPBIT
 ## Setting up the buspirate for i2C mode.
 
 1. bring up the terminal
+
    [![Terminal](/images/t30_bios_terminal.jpg)](/images/t30_bios_terminal.jpg)
+
 2. press 4 to get into I2C mode, then select (3) to select 100KHz mode.
 3. You should now see READY on the terminal. See above picture for details.
 4. We want to bring up the power supply first, so we type in a capital W, the buspirate should respond with
