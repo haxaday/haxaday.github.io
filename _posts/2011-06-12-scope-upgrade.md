@@ -1,4 +1,6 @@
 ---
+layout: post
+author: andrew
 ---
 
 # Scope Upgrade
