@@ -9,8 +9,8 @@ This page will demonstrate how it is possible to enable certain software upgrade
 
 ## Parts
 
-- 1 sim card connector - Ex: digikey 478-4366-1-ND
-- 1 24c08 eeprom - Ex. digikey AT24C08BN-SH-B-ND (other sizes will work too, the instructions here are relevant for the 24c08)
+- 1 sim card connector - Ex: digikey [478-4366-1-ND](http://www.digikey.com/product-detail/en/009162006206175/478-4366-1-ND/1551089)
+- 1 24c08 eeprom - Ex. digikey [AT24C08D-SSHM-TCT-ND](http://www.digikey.com/product-detail/en/AT24C08D-SSHM-T/AT24C08D-SSHM-TCT-ND/4743514) (other sizes will work too, the instructions here are relevant for the 24c08)
 - Protoboard
 - Wirewrap wire
 
@@ -27,7 +27,7 @@ This page will demonstrate how it is possible to enable certain software upgrade
 
    For example, I used an avr to program the EEPROM by modifying the code from [http://www.nongnu.org/avr-libc/examples/twitest/twitest.c](http://www.nongnu.org/avr-libc/examples/twitest/twitest.c):
 
-   ```C
+   ```c
    rv = ee24xx_write_bytes(0x004, 9, (uint8_t *)"DPO2COMP");
    rv = ee24xx_write_bytes(0x204, 9, (uint8_t *)"DPO2EMBD");
    ```

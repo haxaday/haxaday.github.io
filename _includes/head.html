@@ -32,9 +32,11 @@
     <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
     <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 
-	<link href="/css/github-markdown.css" rel="stylesheet" media="all" >
+	<link href="{{ "/css/github-markdown.css" | prepend: site.baseurl }}" rel="stylesheet" media="all" >
+	<link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet" media="all" >
+
 	<style>
-		.markdown-body {
+			.markdown-body {
 			box-sizing: border-box;
 			min-width: 200px;
 			max-width: 980px;

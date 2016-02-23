@@ -4,3 +4,7 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
