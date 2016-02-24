@@ -11,7 +11,7 @@ defaults:
       path: ""
     values:
       layout: "post"
-      permalink: "/projects/:title/"
+      permalink: "/:categories/:title/"
 
 kramdown:
   input: GFM

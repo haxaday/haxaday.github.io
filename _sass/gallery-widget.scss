@@ -1,0 +1,37 @@
+.gallery-widget {
+
+    .view_h { 
+		max-width: 100%; 
+		overflow: hidden; 
+		position: relative;
+	}
+
+    .view_h:before {
+		content: "";
+		display: block;
+		padding-top: 85%;
+	}
+
+    .view_v {
+		position: absolute;
+		top: -38.8%;
+		left: -16.5%;
+		right: -16.5%;
+		bottom: -38.8%;
+		text-align: center;
+	}
+    
+	.view_v:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+    img { 
+		display: inline-block; 
+		max-width: 100%;
+		max-height: 100%;
+	}
+
+}

@@ -1,5 +1,13 @@
 ---
 author: marcin
+img_gallery:
+  t30:
+    - alt: "EEProm"
+      src: "/images/t30_bios_eeprom1.jpg"
+    - alt: "EEProm Zoom"
+      src: "/images/t30_bios_eeprom2.jpg"
+    - alt: "EEProm Zoom Closer"
+      src: "/images/t30_bios_eeprom3.jpg"
 ---
 
 # IBM Thinkpad T30 Bios Password Reset
@@ -20,7 +28,7 @@ A Buspirate is a USB based "Universal Electronic hacking tool to talk to electro
 
 Looking up "T30 bios password reset" on google pointed me towards an eeprom chip located somewhere on the motherboard. In the case of the T30, it was under the RAM slot. (Click for larger image)
 
-[![EEProm](/images/t30_bios_eeprom1.jpg)](/images/t30_bios_eeprom1.jpg) | [![EEProm Zoom](/images/t30_bios_eeprom2.jpg)](/images/t30_bios_eeprom2.jpg) | [![EEProm Zoom Closer](/images/t30_bios_eeprom3.jpg)](/images/t30_bios_eeprom3.jpg)
+{% include widgets/gallery images=page.img_gallery.t30 %}
 
 Upon closer inspection, it turns out to be an ATMEL AT24RF08C, funnily enough, the same eeprom used in the [SCOPE UPGRADE]({% post_url 2011-06-12-scope-upgrade %}) project.
 Looking up the datasheet [online](http://www.datasheetarchive.com/AT24RF08C*-datasheet.html), we can bring out the pinout and addressing modes for this EEProm chip.

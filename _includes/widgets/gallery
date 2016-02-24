@@ -1,0 +1,7 @@
+<div class="row gallery-widget">
+{% for img in include.images %}
+  <div class="col-sm-4">
+	<a href="{{img.src}}" class="thumbnail"><div class="view_h"><div class="view_v"><img src="{{img.src}}" alt="{{img.alt}}" class=""></div></div></a>
+  </div>
+{% endfor %}
+</div>
