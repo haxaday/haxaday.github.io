@@ -2,7 +2,13 @@
 layout: base
 ---
 
-<article id="content" class="markdown-body col-md-12 col-lg-10 col-lg-offset-1"> 
+<article id="content" class="markdown-body col-md-12 col-lg-10"> 
 	{{ content }}
 </article>
 
+<aside role="complementary" class="col-md-12 col-lg-2">
+	<hr class="hidden-lg">
+	<h4>Recent Posts</h4>
+	{% include recent.html %}
+	<hr class="hidden-lg">
+</asid>
