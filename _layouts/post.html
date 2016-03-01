@@ -8,7 +8,16 @@ layout: base
 
 <aside role="complementary" class="col-md-12 col-lg-2">
 	<hr class="hidden-lg">
-	<h4>Recent Posts</h4>
-	{% include recent.html %}
+
+	<div class="visible-lg">
+		<h4>HaxADay</h4>
+		<p>We make Hax so you don't have to. Send your comments to admin `at' haxaday.com.</p>
+	</div>
+
+	<div>
+		<h4>Recent Posts</h4>
+		{% include recent.html limit="10" %}
+	</div>
+	
 	<hr class="hidden-lg">
-</asid>
+</aside>

@@ -1,5 +1,11 @@
+{% if include.limit %}
+	{% assign mylimit = include.limit %}
+{% else %}
+	{% assign mylimit = 10 %}
+{% endif %}
+
 <ul>
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts limit:mylimit %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
