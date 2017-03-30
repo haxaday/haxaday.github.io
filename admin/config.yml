@@ -14,6 +14,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "text" }
 #      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 
