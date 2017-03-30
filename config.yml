@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: haxaday/haxaday.github.io
+  branch: master
+
+publish_mode: editorial_workflow
+media_folder: "images"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "projects/_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Author", name: "author", widget: "string" }
+#      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+
