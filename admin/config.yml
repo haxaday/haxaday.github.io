@@ -3,7 +3,6 @@ backend:
   repo: haxaday/haxaday.github.io
   branch: master
 
-publish_mode: editorial_workflow
 media_folder: "images"
 
 collections:
@@ -14,6 +13,6 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Body", name: "body", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
 #      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
 
